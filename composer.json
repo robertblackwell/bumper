@@ -1,0 +1,31 @@
+{
+    "name":"robertblackwell/litetest",
+    "description": "A lightweight unit testing package - fork of",
+    "keywords": ["lightweight", "php", "unit testing"],
+    "type": "library",
+    "homepage": "https://github.com/robertblackwell/litetest",
+    "license": "MIT",
+    "bin": ["bin/litetest", "bin/litetest.php"],
+    "minimum-stability":"dev",
+    "authors": [
+        {
+            "name":"robertblackwell",
+            "homepage":"https://github.com/robertblackwell"
+        }
+    ],
+
+    "repositories": [
+        {"type": "vcs","url": "git@github.com:robertblackwell/simple_phar_builder"}
+    ],
+
+	"require": {
+        "robertblackwell/simple_phar_builder": "~1.0",
+        "kevinlebrun/colors.php": "^1.0.3",
+        "symfony/console": "6.2.x-dev",
+        "symfony/finder": "6.2.x-dev",
+        "symfony/process": "6.2.x-dev"
+     },
+    "autoload": {
+        "classmap": ["./src"]
+    }
+}
